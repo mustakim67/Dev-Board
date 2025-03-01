@@ -20,8 +20,8 @@ document.getElementById("shopease-btn").addEventListener("click", function (even
     const completeCount = document.getElementById("complete-count").innerText;
     const convertedCount = parseInt(completeCount);
 
-    const val = "0";
-    const finalassigned = val.concat(convertedAssignedCount - 1);
+    const value = "0";
+    const finalassigned = value.concat(convertedAssignedCount - 1);
     document.getElementById("assignedCount").innerText = finalassigned;
 
     const finalCount = convertedCount + 1;
@@ -44,6 +44,10 @@ document.getElementById("shopease-btn").addEventListener("click", function (even
 
     //finally comment ta ke publish place a child hisebe append korlam
     publishPlace.appendChild(userInput);
+    if(finalassigned===("0"+0))
+        {
+            alert("Congrates !!! You have completed all the current task");
+        }
 
 })
 
@@ -84,6 +88,10 @@ document.getElementById("CloudSync-btn").addEventListener("click", function (eve
 
     //finally comment ta ke publish place a child hisebe append korlam
     publishPlace.appendChild(userInput);
+    if(finalassigned===("0"+0))
+        {
+            alert("Congrates !!! You have completed all the current task");
+        }
 })
 
 //Js code for task-03
@@ -123,6 +131,10 @@ document.getElementById("SwiftPay-btn").addEventListener("click", function (even
 
     //finally comment ta ke publish place a child hisebe append korlam
     publishPlace.appendChild(userInput);
+    if(finalassigned===("0"+0))
+        {
+            alert("Congrates !!! You have completed all the current task");
+        }
 })
 
 //Js code for task-04
@@ -162,6 +174,10 @@ document.getElementById("Meta-btn").addEventListener("click", function (event) {
 
     //finally comment ta ke publish place a child hisebe append korlam
     publishPlace.appendChild(userInput);
+    if(finalassigned===("0"+0))
+        {
+            alert("Congrates !!! You have completed all the current task");
+        }
 })
 
 //Js code for task-05
@@ -201,6 +217,10 @@ document.getElementById("Google-btn").addEventListener("click", function (event)
 
     //finally comment ta ke publish place a child hisebe append korlam
     publishPlace.appendChild(userInput);
+    if(finalassigned===("0"+0))
+        {
+            alert("Congrates !!! You have completed all the current task");
+        }
 })
 
 //Js code for task-06
@@ -240,6 +260,11 @@ document.getElementById("Glassdoar-btn").addEventListener("click", function (eve
 
     //finally comment ta ke publish place a child hisebe append korlam
     publishPlace.appendChild(userInput);
+
+    if(finalassigned===("0"+0))
+        {
+            alert("Congrates !!! You have completed all the current task");
+        }
 })
 
 //Clear activity log
@@ -259,4 +284,9 @@ document.getElementById("theme-btn").addEventListener('click', function (event) 
     {
         i=0;
     }
+})
+
+//discover new
+document.getElementById("discover").addEventListener("click",function(){
+    window.location.href="./blog.html"
 })
