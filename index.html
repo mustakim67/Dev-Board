@@ -12,12 +12,18 @@
             font-weight: 100;
             font-style: normal;
         }
+        .comment{
+            background-color:rgb(204, 230, 238);
+            padding: 6px;
+            margin-top: 10px;
+            border-radius: 13px;
+        }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
-<body class="bg-gray-100 poppins-thin">
+<body id="theme" class="bg-gray-100 poppins-thin">
     <section class=" pt-[24px] mx-auto min-h-screen max-w-[85%] pb-14">
         <nav class="flex items-center justify-between bg-white rounded-lg mx-auto px-8 py-5">
             <div class="flex items-center gap-2 ">
@@ -27,7 +33,7 @@
             <div class="flex items-center gap-4">
                 <img src="./assets/checkbox.png" alt="checkbox">
                 <h1 id="complete-count" class="text-2xl font-bold">23</h1>
-                <img class="ml-3" src="./assets/theme-btn.png" alt="theme-btn">
+                <img id="theme-btn" class="ml-3" src="./assets/theme-btn.png" alt="theme-btn">
             </div>
         </nav>
         <!--Card section-->

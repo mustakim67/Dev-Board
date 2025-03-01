@@ -1,10 +1,10 @@
-const date=new Date();
-        const update=date.toDateString();
-        const parts=update.split(" ");
-        parts[0]=parts[0]+" ,";
-        const finalDate=parts[1]+" "+parts[2]+" "+parts[3];
-document.getElementById("updatedDay").innerText=parts[0];
-document.getElementById("updatedDate").innerText=finalDate;
+const date = new Date();
+const update = date.toDateString();
+const parts = update.split(" ");
+parts[0] = parts[0] + " ,";
+const finalDate = parts[1] + " " + parts[2] + " " + parts[3];
+document.getElementById("updatedDay").innerText = parts[0];
+document.getElementById("updatedDate").innerText = finalDate;
 
 
 //Js code for task-01
@@ -37,6 +37,7 @@ document.getElementById("shopease-btn").addEventListener("click", function (even
 
     //New jaygay text add korar jonno new wlwmwnt add korlam
     const userInput = document.createElement('p');
+    userInput.classList.add('comment');
 
     //fetch kora comment publish place a anlam
     userInput.innerText = "You have completed the task " + heading + " at " + time;
@@ -76,6 +77,7 @@ document.getElementById("CloudSync-btn").addEventListener("click", function (eve
 
     //New jaygay text add korar jonno new wlwmwnt add korlam
     const userInput = document.createElement('p');
+    userInput.classList.add('comment');
 
     //fetch kora comment publish place a anlam
     userInput.innerText = "You have completed the task " + heading + " at " + time;
@@ -114,6 +116,7 @@ document.getElementById("SwiftPay-btn").addEventListener("click", function (even
 
     //New jaygay text add korar jonno new wlwmwnt add korlam
     const userInput = document.createElement('p');
+    userInput.classList.add('comment');
 
     //fetch kora comment publish place a anlam
     userInput.innerText = "You have completed the task " + heading + " at " + time;
@@ -152,6 +155,7 @@ document.getElementById("Meta-btn").addEventListener("click", function (event) {
 
     //New jaygay text add korar jonno new wlwmwnt add korlam
     const userInput = document.createElement('p');
+    userInput.classList.add('comment');
 
     //fetch kora comment publish place a anlam
     userInput.innerText = "You have completed the task " + heading + " at " + time;
@@ -190,6 +194,7 @@ document.getElementById("Google-btn").addEventListener("click", function (event)
 
     //New jaygay text add korar jonno new wlwmwnt add korlam
     const userInput = document.createElement('p');
+    userInput.classList.add('comment');
 
     //fetch kora comment publish place a anlam
     userInput.innerText = "You have completed the task " + heading + " at " + time;
@@ -228,6 +233,7 @@ document.getElementById("Glassdoar-btn").addEventListener("click", function (eve
 
     //New jaygay text add korar jonno new wlwmwnt add korlam
     const userInput = document.createElement('p');
+    userInput.classList.add('comment');
 
     //fetch kora comment publish place a anlam
     userInput.innerText = "You have completed the task " + heading + " at " + time;
@@ -239,5 +245,18 @@ document.getElementById("Glassdoar-btn").addEventListener("click", function (eve
 //Clear activity log
 document.getElementById("clear-btn").addEventListener("click", function (event) {
     const clear = document.getElementById("notification");
-   clear.innerHTML="";
+    clear.innerHTML = "";
+})
+
+
+//change theme
+const colors = ['#51e2f5', '#9df9ef', '#edf756', '#ffa8B6', '#d0bdf4'];
+let i = 0;
+document.getElementById("theme-btn").addEventListener('click', function (event) {
+    document.getElementById("theme").style.backgroundColor = colors[i];
+    i = (i + 1);
+    if(i===colors.length)
+    {
+        i=0;
+    }
 })
