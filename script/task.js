@@ -290,3 +290,8 @@ document.getElementById("theme-btn").addEventListener('click', function (event) 
 document.getElementById("discover").addEventListener("click",function(){
     window.location.href="./blog.html"
 })
+
+//back to first page
+document.getElementById("back-btn").addEventListener("click",function(){
+    window.location.href="./index.html"
+})
