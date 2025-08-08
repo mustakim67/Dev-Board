@@ -10,7 +10,10 @@ A simple and interactive task management board built for developers to easily tr
 - [DaisyUI](https://daisyui.com/)
 
 ---
+## 📸 Screenshot
+![Biker Zone Screenshot](https://i.postimg.cc/pTv0WMmr/Screenshot-2025-08-08-140237.jpg)
 
+---
 ## ✨ Features
 
 - ✅ Task assignment and status tracking  
